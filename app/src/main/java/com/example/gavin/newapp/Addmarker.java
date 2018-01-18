@@ -78,7 +78,7 @@ public class Addmarker extends AppCompatActivity {
 
             /* Fill it with Data */
                 sendEmail.setType("plain/text");
-                sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"gavj94@gmail.com"});
+                sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"RECIEVING-EMAIL-HERE@gmail.com"});
                 sendEmail.putExtra(android.content.Intent.EXTRA_SUBJECT, eventname);
                 sendEmail.putExtra(android.content.Intent.EXTRA_TEXT,
                         "longitude:"+longitude+'\n'+"longitude:"+latitude+'\n'+"Email ID:"+email+'\n'+"Message:"+'\n'+additionalinformation);
