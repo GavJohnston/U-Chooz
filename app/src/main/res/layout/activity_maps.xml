@@ -1,0 +1,237 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3">
+
+    <EditText
+        android:id="@+id/TF_location1"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/map1"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Search by place"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#ffff"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/B_search1"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onClick"
+        android:text="@string/Search"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="287dp"
+        android:layout_height="415dp"
+        android:layout_above="@+id/B_bus1"
+        android:layout_below="@+id/TF_location1"
+        android:layout_toStartOf="@+id/B_search1"
+        tools:context="com.example.gavin.newapp.MainActivitysplash"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/B_park1"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_amusement_park1"
+        android:layout_toEndOf="@+id/map1"
+        android:onClick="onClick"
+        android:text="@string/Parks"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <Button
+        android:id="@+id/B_bowling_alley1"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_spa1"
+        android:layout_toEndOf="@+id/map1"
+        android:onClick="onClick"
+        android:text="@string/Bowling"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <Button
+        android:id="@+id/B_amusement_park1"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_bowling_alley1"
+        android:layout_toEndOf="@+id/map1"
+        android:onClick="onClick"
+        android:text="@string/Amusements"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <Button
+        android:id="@+id/B_taxistand1"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/B_beauty_salon1"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_bus1"
+        android:onClick="onClick"
+        android:text="@string/TAXI2"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_bus1"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_parking1"
+        android:onClick="onClick"
+        android:text="@string/Bus1"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_train1"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+
+        android:onClick="onClick"
+        android:text="@string/Train"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_parking1"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_subway1"
+        android:onClick="onClick"
+        android:text="@string/B_parking"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_subway1"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toEndOf="@+id/B_train1"
+        android:onClick="onClick"
+        android:text="@string/Subway"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/B_train1"
+        android:layout_toEndOf="@+id/B_train1"
+        android:text="Always plan your route home"
+        android:textColor="#b30000"
+        android:textSize="12sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <Button
+        android:id="@+id/B_spa1"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@+id/B_search1"
+        android:layout_toEndOf="@+id/map1"
+        android:onClick="onClick"
+        android:text="@string/Spas"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <Button
+        android:id="@+id/B_shopping_mall1"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_park1"
+        android:layout_toEndOf="@+id/map1"
+        android:onClick="onClick"
+        android:text="@string/Shopping"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:id="@+id/B_beauty_salon1"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_aquarium1"
+        android:layout_toEndOf="@+id/map1"
+        android:onClick="onClick"
+        android:text="Beauty salon"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/B_aquarium1"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_shopping_mall1"
+        android:layout_toEndOf="@+id/map1"
+        android:onClick="onClick"
+        android:text="@string/aquarium"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+
+</RelativeLayout>

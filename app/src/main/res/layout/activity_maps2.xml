@@ -1,0 +1,232 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3">
+
+    <EditText
+        android:id="@+id/TF_location2"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Search by place"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/B_search2"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/map2"
+        android:layout_toEndOf="@+id/map2"
+        android:onClick="onClick"
+        android:text="@string/Search"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="283dp"
+        android:layout_height="415dp"
+        android:layout_above="@+id/B_bus2"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TF_location2"
+        android:layout_toStartOf="@+id/B_bars2"
+        tools:context="com.example.gavin.newapp.MainActivitysplash"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/B_bars2"
+        android:layout_width="92dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_restaurant2"
+        android:onClick="onClick"
+        android:text="@string/Bars"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <Button
+        android:id="@+id/B_cafes2"
+        android:layout_width="92dp"
+        android:layout_height="45dp"
+
+
+        android:layout_alignStart="@+id/B_bakery2"
+        android:layout_below="@+id/B_bakery2"
+        android:onClick="onClick"
+        android:text="Cafes"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <Button
+        android:id="@+id/B_restaurant2"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/B_bars2"
+        android:layout_below="@+id/B_grocery2"
+        android:onClick="onClick"
+        android:text="Restaurant"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <Button
+        android:id="@+id/B_taxi_stand2"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_bus2"
+        android:onClick="onClick"
+        android:text="@string/TAXI"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_bus2"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_parking2"
+        android:onClick="onClick"
+        android:text="@string/Bus"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_train_station2"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:text="@string/Train"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_parking2"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_subway2"
+        android:onClick="onClick"
+        android:text="@string/B_parking"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_subway2"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toEndOf="@+id/B_train_station2"
+        android:onClick="onClick"
+        android:text="@string/Subway"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/B_bus2"
+
+        android:layout_toEndOf="@+id/B_train_station2"
+        android:text="Always plan your route home"
+        android:textColor="#b30000"
+        android:textSize="12sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <Button
+        android:id="@+id/B_takeaway2"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/B_cafes2"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"
+        android:text="@string/takeaway"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <Button
+        android:id="@+id/B_delivery2"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_search2"
+        android:onClick="onClick"
+        android:text="@string/delivery"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/B_bakery2"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@+id/B_bars2"
+        android:onClick="onClick"
+        android:text="@string/Bakery"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <Button
+        android:id="@+id/B_grocery2"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_delivery2"
+        android:onClick="onClick"
+        android:text="Grocery"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+
+</RelativeLayout>

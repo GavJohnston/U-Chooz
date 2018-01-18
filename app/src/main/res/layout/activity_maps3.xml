@@ -1,0 +1,206 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3">
+
+    <EditText
+        android:id="@+id/TF_location3"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="Search by place"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/B_search3"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/TF_location3"
+        android:layout_alignBottom="@+id/TF_location3"
+        android:layout_alignStart="@+id/B_art_gallery3"
+        android:onClick="onClick"
+        android:text="Search"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map3"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="288dp"
+        android:layout_height="415dp"
+        android:layout_above="@+id/B_taxistand3"
+        android:layout_below="@+id/TF_location3"
+        android:layout_toStartOf="@+id/B_search3"
+        tools:context="com.example.gavin.newapp.MainActivitysplash"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/B_stadium3"
+        android:layout_width="91dp"
+        android:layout_height="45dp"
+
+        android:layout_alignStart="@+id/B_museum3"
+        android:layout_below="@+id/B_museum3"
+        android:onClick="onClick"
+        android:text="Stadiums"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <Button
+        android:id="@+id/B_movie_theater3"
+        android:layout_width="92dp"
+        android:layout_height="45dp"
+
+
+        android:layout_alignStart="@+id/B_night_club3"
+        android:layout_below="@+id/B_night_club3"
+        android:onClick="onClick"
+        android:text="Movies"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <Button
+        android:id="@+id/B_night_club3"
+        android:layout_width="92dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/B_art_gallery3"
+        android:onClick="onClick"
+        android:text="Nightclub"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <Button
+        android:id="@+id/B_taxistand3"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_bus3"
+        android:onClick="onClick"
+        android:text="@string/TAXI"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_bus3"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_subway3"
+        android:onClick="onClick"
+        android:text="@string/Bus3"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_train3"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:text="@string/Train3"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_parking3"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/B_taxistand3"
+        android:onClick="onClick"
+        android:text="@string/B_parking3"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/B_subway3"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/B_train3"
+        android:onClick="onClick"
+        android:text="@string/Subway3"
+        android:textSize="8sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/B_bus3"
+        android:layout_centerHorizontal="true"
+        android:text="Always plan your route home"
+        android:textColor="#b30000"
+        android:textSize="12sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <Button
+        android:id="@+id/B_art_gallery3"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/B_night_club3"
+        android:layout_below="@+id/B_search3"
+        android:onClick="onClick"
+        android:text="art galleries"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <Button
+        android:id="@+id/B_museum3"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/B_movie_theater3"
+        android:layout_below="@+id/B_movie_theater3"
+        android:onClick="onClick"
+        android:text="@string/Museum"
+        android:textSize="9.5sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a3a3a3"
+    tools:context="com.example.gavin.newapp.MainActivityhome">
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_above="@+id/imageButton4"
+        android:layout_toStartOf="@+id/imageButton6"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/activities"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="103dp"
+        android:layout_toStartOf="@+id/imageButton5"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/events"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/contact"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_above="@+id/imageButton5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/restaurants"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton6"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/uc2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/textView-desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:text="U-chooz is a location based application that reccomends a number of activities, Events and restaurants based on what you would input."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/addevents"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/imageButton5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_gravity="center"
+        android:layout_marginBottom="35dp"
+        android:background="#b30000"
+        android:paddingBottom="1dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="1dp"
+        android:text="Add your own marker"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+</RelativeLayout>

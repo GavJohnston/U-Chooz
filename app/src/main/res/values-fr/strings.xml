@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">u-chooz</string>
+<string name="Uchoozdesc">Uchoozdesc</string>
+<string name="title_activity_maps">Carte</string>
+<string name="title_activity_maps2">Carte</string>
+<string name="title_activity_maps3">Carte</string>
+
+
+<string name="contact_form">Contactez nous</string>
+<string name="contact_form_name">Ton prénom</string>
+<string name="contact_form_name2">Votre nom de famille</string>
+<string name="contact_form_email">Votre adresse email</string>
+<string name="contact_form_subject">Assujettir</string>
+<string name="contact_form_message">Envoyer une demande</string>
+<string name="sendrequest2">message</string>
+<string name="sendrequest1">Envoyer le  Message</string>
+<string name="contact_form_post_message">Veuillez patienter ... Nous envoyons votre message à l\'\équipe appropriée </string>
+<string name="contact_posted">Votre message a été livré avec succès.</string>
+<string name="Subway">métro</string>
+<string name="Train">train</string>
+<string name="Bus">autobus</string>
+<string name="TAXI">taxi</string>
+<string name="Restautant">rest-b</string>
+<string name="B_parking">parking</string>
+<string name="TAXI2">Taxi</string>
+<string name="Bus1">autobus</string>
+<string name="Bus3">autobus</string>
+<string name="Train3">train</string>
+<string name="B_parking3">parking</string>
+<string name="Subway3">métro</string>
+<string name="contact_form_button2">poster un message</string>
+<string name="contact_form_message2">formulaire de contact message 2</string>
+<string name="contact_form_subject2">formulaire de contact sujet 2</string>
+<string name="Museum">Museum3</string>
+<string name="takeaway">à emporter</string>
+<string name="delivery">Livraison</string>
+<string name="Bakery">Boulangerie</string>
+<string name="Bars">Bars</string>
+<string name="Search">Chercher</string>
+<string name="longitude">longitude</string>
+<string name="latitude">latitude</string>
+<string name="Parks">les parcs</string>
+<string name="Bowling">Bowling</string>
+<string name="Amusements">amusements</string>
+<string name="Spas">les thermes</string>
+<string name="Shopping">achats</string>
+<string name="aquarium">aquarium</string>
+
+    </resources>

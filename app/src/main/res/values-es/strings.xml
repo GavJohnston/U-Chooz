@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">u-chooz</string>
+    <string name="Uchoozdesc">Uchoozdesc</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_maps2">Mapa</string>
+    <string name="title_activity_maps3">Mapa</string>
+
+
+    <string name="contact_form">Contáctenos</string>
+    <string name="contact_form_name">Su nombre</string>
+    <string name="contact_form_name2">Tu apellido</string>
+    <string name="contact_form_email">Tu correo electrónico</string>
+    <string name="contact_form_subject">Tema</string>
+    <string name="contact_form_message">Mensaje</string>
+    <string name="sendrequest2">Enviar petición</string>
+    <string name="sendrequest1">Enviar mensaje</string>
+    <string name="contact_form_post_message">Espere ... Estamos enviando su mensaje al equipo correcto</string>
+    <string name="contact_posted">Su mensaje ha sido entregado exitosamente.</string>
+    <string name="Subway">subterraneo</string>
+    <string name="Train">tren</string>
+    <string name="Bus">autobús</string>
+    <string name="TAXI">taxi</string>
+    <string name="Restautant">resto-b</string>
+    <string name="B_parking">estacionamiento</string>
+    <string name="TAXI2">Taxi</string>
+    <string name="Bus1">autobús</string>
+    <string name="Bus3">autobús</string>
+    <string name="Train3">tren</string>
+    <string name="B_parking3">estacionamiento</string>
+    <string name="Subway3">subterraneo</string>
+    <string name="contact_form_button2">publicar mensaje</string>
+    <string name="contact_form_message2">mensaje de formulario de contacto 2</string>
+    <string name="contact_form_subject2">formulario de contacto tema 2</string>
+    <string name="Museum">Museo3</string>
+    <string name="takeaway">para llevar</string>
+    <string name="delivery">Entrega</string>
+    <string name="Bakery">Panadería</string>
+    <string name="Bars">Barras</string>
+    <string name="Search">Buscar</string>
+    <string name="longitude">longitud</string>
+    <string name="latitude">latitud</string>
+    <string name="Parks">parques</string>
+    <string name="Bowling">Bolos</string>
+    <string name="Amusements">Bolos</string>
+    <string name="Spas">spa\'s</string>
+    <string name="Shopping">compras</string>
+    <string name="aquarium">acuario</string>
+
+
+</resources>
