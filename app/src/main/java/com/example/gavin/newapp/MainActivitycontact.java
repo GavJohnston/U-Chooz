@@ -75,7 +75,7 @@ public class MainActivitycontact extends AppCompatActivity {
 
             //auto fill data on email app
                 sendEmail.setType("plain/text");
-                sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"gavj94@gmail.com"});
+                sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"RECIEVING-EMAIL-HERE@gmail.com"});
                 sendEmail.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
                 sendEmail.putExtra(android.content.Intent.EXTRA_TEXT,
                         "First name:"+firstname+'\n'+'\n'+"Last name:"+lastname+'\n'+'\n'+"Email ID:"+email+'\n'+'\n'+"Message:"+'\n'+'\n'+message);
